@@ -1,0 +1,64 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 6vh;
+}
+header img {
+    width: 100%;
+    margin-top: 2vh;
+    /* margin: 0%;
+    padding: 0%; */
+}
+
+.logo {
+    width: 200px;
+    margin: auto;
+}
+.redes {
+    background-color: #cdb087;
+    height: 6vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+}
+
+.redes ul {
+    display: flex;
+    justify-content: space-between;
+    width: 110px;
+}
+
+nav {
+    background-color: #816c51;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.iconos-redes {
+    width: 50%;
+    font-size: 25px;
+}
+
+ul li a {
+    color:  #ffffff;
+}
