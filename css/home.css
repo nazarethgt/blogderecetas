@@ -87,6 +87,15 @@ body {
     transform: none;
     transition: all .3s .3s;
   }
+
+.copyright{
+  color: #ffffff;
+  /* left: 10px; */
+  position:absolute;
+  /* bottom:40vh; */
+  margin-top: 60vh;
+  font-size: 0.7rem;
+}
   
   @media screen and (max-width: 800px) {
     body {
@@ -112,12 +121,4 @@ body {
       visibility: visible;
       transform: none;
     }
-  }
-  .copyright{
-    color: #ffffff;
-    /* left: 10px; */
-    position:absolute;
-    /* bottom:40vh; */
-    margin-top: 60vh;
-    font-size: 0.7rem;
   }

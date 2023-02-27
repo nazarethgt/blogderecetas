@@ -6,9 +6,11 @@
     box-sizing: border-box;
 }
 body {
+    background-image: url(../multimedia/Imagen/background\ contact\ us.jpg);
+    background-size: cover;
     background-color: #fff;
     font-family: 'Josefin Sans', sans-serif;
-
+    color: #fff;
 }
 
 .title { 
@@ -21,17 +23,27 @@ img {
     width: 100%;
 }
 
-
-.formulario {
-    width: 100%;
-    height: 70vh;
+.content-contact {
+    width: 80%;
+    height: fit-content;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
+    margin: auto;
+}
+
+.formulario {
+    width: 50%;
+    height: 70vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
     background-color: transparent;
 }
+
 .box {
-    width: 50%;
+    width: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -53,7 +65,77 @@ img {
     align-items: center;
 }
 
+.form-group i {
+    margin-right: 8px;
+}
+
 .form-input {
     width: 100%;
     text-align: center;
 }
+
+/*img {
+    width: 100%;
+}*/
+
+.map {
+    width:45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    float: right;
+    /* margin-top: -350px; */
+}
+
+.map iframe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    float: right;
+}
+
+.map p {
+    text-align: justify;
+    width: 75%;
+    margin: auto;
+}
+@media screen and (max-width: 768px) {
+    body {
+      font-size: 1rem;
+      line-height: 1.25;
+    }
+    
+    .content-contact {
+        flex-direction: column;
+    }
+
+    .formulario, .map {
+        width: 75%;
+    }
+
+   
+    /* .flex-wrapper {
+      flex-direction: column;
+    }
+    
+    .flex-wrapper a:hover {
+      flex: 1;
+    }
+    
+    .flex-wrapper a:hover .overlay {
+      background-color: transparent;
+    }
+    
+    .flex-wrapper .overlay h2,
+    .flex-wrapper .overlay p {
+      opacity: 1;
+      visibility: visible;
+      transform: none;
+    } */
+  }

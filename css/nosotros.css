@@ -6,38 +6,84 @@
     box-sizing: border-box;
 }
 body {
-    background-color: #fff;
+
+    background-size: cover;
     font-family: 'Josefin Sans', sans-serif;
+    color: black;
 
 }
 
+.info {
+    position: absolute;
+    z-index: 3;
+    margin: auto;
+    background-color: #f5f5dc5e;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 3vh;
+}
+.content-bio {
+    /* display: flex; */
+    position: relative;
+    background-image: url('../multimedia/Imagen/DSC06450.JPG');
+    background-position: center;
+    background-attachment: fixed;
+    background-size: contain;
+    height: 100vh;
+}
+
+.content-bio img {
+    /* position: sticky; */
+}
+
+
+
+
 .mybio { 
-    width: 45%;
+    width: 75%;
     text-align: justify;
+    margin-left: auto;
     margin: auto;
     margin-top: 0vh;
 }
 
 .title { 
-    width: 45%;
+    width: 80%;
     text-align: center;
     margin: auto;
     margin-top: 5vh;
 }
 
-img {
-    width: 100%;
-}
-
-.map {
-    width:45%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: auto;
-}
-
-.map iframe {
-    margin: auto;
+.copyright{
+    color: #000000;
+    /* left: 10px; */
+    position:absolute;
+    /* bottom:40vh; */
+    /* margin-bottom: 5vh; */
+    font-size: 0.7rem;
+  }
+@media screen and (max-width: 800px) {
+    body {
+      font-size: 1rem;
+      line-height: 1.25;
+    }
     
-}
+    .flex-wrapper {
+      flex-direction: column;
+    }
+    
+    .flex-wrapper a:hover {
+      flex: 1;
+    }
+    
+    .flex-wrapper a:hover .overlay {
+      background-color: transparent;
+    }
+    
+    .flex-wrapper .overlay h2,
+    .flex-wrapper .overlay p {
+      opacity: 1;
+      visibility: visible;
+      transform: none;
+    }
+  }
